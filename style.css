@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* :root {
+    font-size: 62.5%;
+} */
+
+body {
+    font-family: poppins;
+    /* color: white; */
+}
+
+header {
+    background-image: url(unsplash_FCHlYvR5gJI.png);
+    height: 90vh;
+    position: relative;
+    color: white;
+}
+
+.logo-text {
+    font-size: 24px;
+    text-decoration: none;
+    vertical-align: middle;
+    color: white;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    bottom: 0;
+
+}
+
+nav img {
+    vertical-align: middle;
+}
+
+.nav-bar {
+    padding: 0;
+    list-style: none;
+}
+
+.nav-bar-link {
+    display: inline;
+    margin: 0 50px;
+}
+
+.nav-bar-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-bar-link a:hover {
+    color: rgb(230, 228, 228);
+}
+
+header button {
+    background-color: #00D899;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+header button:hover {
+    background-color: #03eba9;
+}
+
+.hero {
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 60%;
+}
+
+.hero button {
+    padding: 8px 70px;
+}
+
+.hero h1 {
+    margin-bottom: 30px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.message-vector {
+    width: 60px;
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+}
+
+.message-vector img{
+    width: 100%;
+}
+
+span {
+    color: #00D899;
+}
+
+/* ................containers...............*/
+
+section {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.left {
+    width: 35%;
+}
+
+.right {
+    width: 55%;
+}
+
+.what-we-do .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.top,
+.bottom {
+    display: flex;
+}
+
+section article {
+    width: 80%;
+    margin-top: 50px;
+}
+
+section img {
+    width: 50px;
+}
+
+.who-are-we .right {
+    padding-right: 60px;
+}
+
+.who-are-we .right p {
+    margin-top: 20px;
+}
+
+.who-are-we .right span,
+.footer-logo a {
+    color: black;
+    font-size:30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.why-choose-us .right div {
+    margin-bottom: 50px;
+}
+
+
+/* ........footer.................. */
+
+.footer-section {
+    background-color: #E3E3E380;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+.contact-footer ul{
+    list-style: none;
+}
+
+.contact-footer li {
+    margin: 20px 0;
+}
+
+.faq ul{
+    list-style-image: url(list-vector.png);
+}
+
+.faq li {
+    margin: 30px 0;
+}
+
+.faq a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .left, 
+    .right {
+        width: 95%;
+    }
+    .top,
+    .bottom {
+        display: block;
+    }
+    section article {
+        margin: auto;
+        margin-top: 30px;
+    }
+    .left {
+        margin-bottom: 30px;
+    }
+
+    .who-are-we .right {
+        padding-right: 0;
+    }
+    .nav-bar, 
+    nav button {
+        display: none;
+    }
+    .hero {
+        width: 85%;
+    }
+    .hero h1 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .hero p {
+        font-size: 12px;
+    }
+    .footer-section {
+        flex-direction: column;
+    }
+    footer article {
+        margin-bottom: 30px;
+    }
+}
